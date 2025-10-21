@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Assignment</title>
+</head>
+<body>
+  <h1>Math Assignment</h1>
+
+
+
+  <script>
+
+     // let values = [4.2, 5.1, 3.8, 4.7, 5.3];
+       // let sum = 0;
+/*
+        for (let i = 0; i < numbers.length; i++) {
+            sum += numbers[i];
+        }
+     console.log('Average:', sum / numbers.length);
+
+     const result = sum / numbers.length;
+
+     console.log('Average:', Math.round(result));
+
+   */
+
+    let numbers = [4.2, 5.1, 3.8, 4.7, 5.3];
+     
+    // Function to calculate the average of an array
+
+     function calculateAverage(numbers) {
+      var sum = 0;
+
+      for (i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+      }
+        return sum / numbers.length;
+     }
+      
+     calculateAverage(numbers);
+     // Calculate the average
+     var average = calculateAverage(numbers);
+     var roundedAverage = Math.round(average * 100) / 100;
+     let resultMessage = `Average: ${roundedAverage}`;
+     
+
+     console.log(resultMessage);
+   
+   
+  </script>
+</body>
+</html>

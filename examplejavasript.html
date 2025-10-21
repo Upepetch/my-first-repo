@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Upepetch Luxury Yacht Rentals - Gallery</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Yatching Rental" />
+        <meta name="keywords" content="Yatching, rental, luxury, water, sailling, occasions" />
+        <meta name="author" content="Simon Bayikah" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+       
+     
+    </head>
+    <body>
+
+      <!--This is the navigavtion section-->
+
+        <nav>
+          <ul>
+             <li><a href="Home.html">Home</a></li>
+             <li><a href="Rentals.html">Rentals</a></li>
+             <li><a href="Gallery.html">Gallery</a></li>
+             <li><a href="About.html">About</a></li>
+             <li><a href="Contact us.html">Contact</a></li>  
+           </ul>
+         </nav>
+ <!-- This is the javascript section-->
+
+<section class="chapter-section">
+   <img 
+   id="myImage"
+   width="500"
+   src="images/gallery8.jpg" alt="Real Image">
+
+
+  <script>
+     document.addEventListener("DOMContentLoaded", function () {
+       
+        var image = document.getElementById("myImage");
+
+        // Change image source on "enter" key press
+
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            image.src = "images/gallery4.jpeg";
+        }
+    })
+});
+</script>
+
+</section>
+
+<!--
+
+ changeAttributes exemples:
+
+
+<section class="chapter-section">
+   <img 
+   id="myImage"
+   width="500"
+   src="images/gallery8.jpg" alt="Real Image">
+
+   <button onclick="changeAttributes()">Change Attributes</button>
+
+  <script>
+     function changeAttributes() {
+    // Get the existing image element
+
+    var image = document.getElementById("myImage");
+
+    // Change the src attribute
+
+    image.src = "images/gallery4.jpeg";
+
+    // Change the alt attribute
+
+    image.alt = "Duplicate of the image"
+
+    }
+</script>
+
+</section>
+ 
+ 
+-->
+
+
+ <!--
+
+    changeTag function examples:
+
+
+<section class="chapter-section">
+    <h2 id="heading">Hello World!</h2>
+
+   <button onclick="changeTag()">Change Tag</button>
+
+  <script>
+     function changeTag() {
+    // Get the existing heading element
+
+    var heading = document.getElementById("heading");
+
+    // Create a new paragraph element
+
+    var newParagraph = document.createElement("p");
+
+    // Set the content of the paragraph
+
+    newParagraph.textContent = "This is a new paragraph created dynamically.";
+
+    // Replace the existing heading with the new paragraph
+
+    heading.parentNode.replaceChild(newParagraph, heading);
+    }
+</script>
+
+</section>
+
+-->
+
+ <!--
+
+   myFunction examples:
+
+
+   <section class="chapter-section">
+    <h2 id="change">Upepetcch Rentals - Javascript Example</h2>
+
+    <script>
+        function myFunction() {
+            document.getElementById("test").innerHTML = "This is the changed heading.";
+        }
+    </script>
+
+      <h1 id="test">This the original heading.</h1>
+      <button onclick="myFunction()">Click me to change the heading</button>
+   </section>
+      
+  -->
+        <!--This is the footer section-->
+
+        <footer>
+            <div class="footer-content">
+       
+             <p>&copy;2024 Upepetch Luxury Yacht Rental. All rights reserved.</p>
+       
+             <ul class="footer-links">
+               <li><a href="home.html">Home</a></li>
+               <li><a href="rentals.html">Rentals</a></li>
+               <li><a href="gallery.html">Gallery</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="contact.html">Contact</a></li>  
+             </ul>
+          <p class="footer-social">
+               <a href="#"><i class="fab fa-facebook-f"></i></a>
+               <a href="#"><i class="fab fa-instagram"></i></a>
+               <a href="#"><i class="fab brands fa-twitter"></i></a>
+            </p>
+            </div>
+        </footer>
+      </body>
+  </html>
